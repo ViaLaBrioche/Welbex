@@ -1,0 +1,118 @@
+$colorText: #e4e5ea;
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 46px 150px;
+  margin-top: 50px;
+  & .left {
+    display: flex;
+    flex-direction: column;
+    & h1 {
+      font-family: "Inter", sans-serif;
+      line-height: normal;
+      color: $colorText;
+      font-size: 48px;
+      font-weight: 400;
+      margin-top: 43px;
+      & .gardient {
+        font-family: "Inter", sans-serif;
+        font-size: 48px;
+        font-weight: 900;
+        background: linear-gradient(120deg, #fcb045, #ff3f78);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+    }
+    & .text {
+      font-family: "Montserrat", sans-serif;
+      color: $colorText;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  & .right {
+    color: $colorText;
+    display: grid;
+    text-align: end;
+    margin-top: 40px;
+    font-family: "Inter", sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 46px;
+    grid-row-gap: 30px;
+    & .up {
+      grid-area: 1 / 1 / 2 / 3;
+      & p {
+        text-align: right;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      & span {
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+    & .vidjet {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    & .dashboard {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    & .skype {
+      text-align: right;
+      margin-top: -12px;
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    & .days {
+      margin-top: -10px;
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    & .btn {
+      margin-top: 10px;
+      grid-area: 4 / 1 / 5 / 3;
+    }
+    & button {
+      width: 262px;
+      height: 61px;
+      flex-shrink: 0;
+      background: #4077f3;
+      color: $colorText;
+      cursor: pointer;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+.redball__light {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.redball__small{
+  position: absolute;
+  top: 547px;
+  z-index: -1;
+  left: 55%;
+}
+.description {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.right_title {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,78 @@
+$colorText: #e4e5ea;
+
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 46px 150px;
+  padding: 11px 0px 4px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;
+    gap: 8px;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+  }
+
+  & .text {
+    width: 165px;
+    color: $colorText;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  & .numberPhone {
+    color: $colorText;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin-left: 60px;
+  }
+
+  & .right {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  & .menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  & .header__menu__btn {
+    color: $colorText;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  & .redball {
+    position: absolute;
+    margin: 15px 354px;
+  }
+  & .purpleball {
+    position: absolute;
+    top: -54px;
+    left: 700px;
+  }
+  & .purplelightball {
+    position: absolute;
+    top:-50px;
+    left: 80px;
+  }
+}
