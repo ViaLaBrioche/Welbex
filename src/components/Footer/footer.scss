@@ -2,7 +2,7 @@ $white: #e4e5ea;
 $darkgrey: #656566;
 
 .footer__container {
-  margin: 90px 150px 20px;
+  margin: 120px 150px 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -60,4 +60,10 @@ $darkgrey: #656566;
 }
 .text__underline {
   text-decoration: underline;
+}
+  
+@media (max-width: 480px) {
+  .footer__container {
+    margin: 0px 0px;
+  }
 }

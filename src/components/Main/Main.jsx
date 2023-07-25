@@ -28,40 +28,46 @@ export const Main = () => {
             мы дарим:
           </p>
         </div>
-        <div className="vidjet">
-          <span className="right_title">ВИДЖЕТЫ</span>
-          <span className="description">
-            <br />
-            30 готовых
-            <br />
-            решений
-          </span>
-        </div>
-        <div className="dashboard">
-          <span className="right_title">DASHBOARD</span>
-          <span className="description">
-            <br />
-            с показателями
-            <br />
-            вашего бизнеса
-          </span>
-        </div>
-        <div className="skype">
-          <span className="right_title">SKYPE Аудит</span>
-          <span className="description">
-            <br />
-            отдела продаж
-            <br />и CRM системы
-          </span>
-        </div>
-        <div className="days">
-          <span className="right_title">35 ДНЕЙ</span>
-          <span className="description">
-            <br />
-            использования
-            <br />
-            CRM
-          </span>
+        <div className="_main">
+          <div className="main__left">
+            <div className="vidjet">
+              <span className="right_title">ВИДЖЕТЫ</span>
+              <span className="description">
+                <br />
+                30 готовых
+                <br />
+                решений
+              </span>
+            </div>
+            <div className="dashboard">
+              <span className="right_title">DASHBOARD</span>
+              <span className="description">
+                <br />
+                с показателями
+                <br />
+                вашего бизнеса
+              </span>
+            </div>
+          </div>
+          <div className="main__right">
+            <div className="skype">
+              <span className="right_title">SKYPE Аудит</span>
+              <span className="description">
+                <br />
+                отдела продаж
+                <br />и CRM системы
+              </span>
+            </div>
+            <div className="days">
+              <span className="right_title">35 ДНЕЙ</span>
+              <span className="description">
+                <br />
+                использования
+                <br />
+                CRM
+              </span>
+            </div>
+          </div>
         </div>
         <div className="btn">
           <button>Получить консультацию</button>

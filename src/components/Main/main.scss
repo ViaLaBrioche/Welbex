@@ -33,14 +33,9 @@ $colorText: #e4e5ea;
   }
   & .right {
     color: $colorText;
-    display: grid;
     text-align: end;
     margin-top: 40px;
     font-family: "Inter", sans-serif;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 46px;
-    grid-row-gap: 30px;
     & .up {
       grid-area: 1 / 1 / 2 / 3;
       & p {
@@ -60,25 +55,22 @@ $colorText: #e4e5ea;
         font-weight: 700;
       }
     }
-    & .vidjet {
-      grid-area: 2 / 1 / 3 / 2;
+    & ._main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 10;
+      margin-top: 40px;
+      margin-bottom: 61px;
+      gap: 46px;
+
+      & .main__left, .main__right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
     }
-    & .dashboard {
-      grid-area: 2 / 2 / 3 / 3;
-    }
-    & .skype {
-      text-align: right;
-      margin-top: -12px;
-      grid-area: 3 / 1 / 4 / 2;
-    }
-    & .days {
-      margin-top: -10px;
-      grid-area: 3 / 2 / 4 / 3;
-    }
-    & .btn {
-      margin-top: 10px;
-      grid-area: 4 / 1 / 5 / 3;
-    }
+
     & button {
       width: 262px;
       height: 61px;
@@ -115,4 +107,10 @@ $colorText: #e4e5ea;
   letter-spacing: 0.9px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .main__container {
+    margin: 0px 0px;
+  }
 }
