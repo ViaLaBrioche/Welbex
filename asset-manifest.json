@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Welbex/static/css/main.48c9fc7c.css",
+    "main.css": "/Welbex/static/css/main.8ea75dd2.css",
     "main.js": "/Welbex/static/js/main.ca95c69f.js",
     "static/media/part2.svg": "/Welbex/static/media/part2.817aff77ea74f10279c01e208ee0b0bd.svg",
     "static/media/whatsapp.svg": "/Welbex/static/media/whatsapp.ebe720f0c912eda28e2bf0613c18300f.svg",
@@ -14,11 +14,11 @@
     "static/media/redlight.svg": "/Welbex/static/media/redlight.3d1d5081f50e92e9bbc9e1f938225a53.svg",
     "static/media/telegram.svg": "/Welbex/static/media/telegram.40ecd015eebebbe71b5bd0354d54208e.svg",
     "static/media/line.svg": "/Welbex/static/media/line.e54c78534812ceaf5439f1313ba9da98.svg",
-    "main.48c9fc7c.css.map": "/Welbex/static/css/main.48c9fc7c.css.map",
+    "main.8ea75dd2.css.map": "/Welbex/static/css/main.8ea75dd2.css.map",
     "main.ca95c69f.js.map": "/Welbex/static/js/main.ca95c69f.js.map"
   },
   "entrypoints": [
-    "static/css/main.48c9fc7c.css",
+    "static/css/main.8ea75dd2.css",
     "static/js/main.ca95c69f.js"
   ]
 }
