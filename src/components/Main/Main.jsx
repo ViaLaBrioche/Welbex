@@ -2,6 +2,7 @@ import React from "react";
 import "./main.scss";
 import { ReactComponent as RedLightBall } from "./Images/redlight.svg";
 import { ReactComponent as RedSmallBall } from "./Images/redsmallball.svg";
+import { ReactComponent as Line } from "./Images/line.svg";
 
 export const Main = () => {
   return (
@@ -19,7 +20,6 @@ export const Main = () => {
             продажи за вас
           </span>
         </div>
-        <div>
           <div className="right">
             <div className="up">
               <p className="free__consult">
@@ -73,19 +73,18 @@ export const Main = () => {
             </div>
             <div className="_main__down">
               <div className="_left">
-                <p>Skype аудит</p>
-                <p>Dashboard</p>
+                <p><Line className="line"/> Skype аудит</p>
+                <p><Line className="line"/> Dashboard</p>
               </div>
               <div className="_right">
-                <p>30 виджетов</p>
-                <p>Месяц аmoCRM</p>
+                <p><Line className="line"/> 30 виджетов</p>
+                <p><Line className="line"/> Месяц аmoCRM</p>
               </div>
             </div>
             <div className="btn">
               <button>Получить консультацию</button>
             </div>
           </div>
-        </div>
       </div>
     </main>
   );
