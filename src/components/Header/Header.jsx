@@ -41,9 +41,9 @@ export const Header = () => {
             </span>
           ))}
         </div>
-        <PurpleBall className="purpleball" />
-        <RedBall className="redball" />
-        <PurpleLightBall className="purplelightball" />
+        <PurpleBall className="purpleball desktop__ball" />
+        <RedBall className="redball desktop__ball" />
+        <PurpleLightBall className="purplelightball desktop__ball" />
         <span className="numberPhone">+7 555 555-55-55</span>
         <div className="right">
           <IconTelegram />

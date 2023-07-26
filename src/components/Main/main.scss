@@ -1,58 +1,64 @@
 $colorText: #e4e5ea;
+body {
+  margin: 0px;
+  background: #0e1014;
+}
 
 .main__container {
-  display: flex;
-  justify-content: space-between;
-  margin: 46px 150px;
-  margin-top: 50px;
-  & .left {
+  & .main__content {
     display: flex;
-    flex-direction: column;
-    & h1 {
-      font-family: "Inter", sans-serif;
-      line-height: normal;
-      color: $colorText;
-      font-size: 48px;
-      font-weight: 400;
-      margin-top: 43px;
-      & .gardient {
+    justify-content: space-between;
+    margin: 46px 150px;
+    margin-top: 50px;
+    & .left {
+      display: flex;
+      flex-direction: column;
+      & h1 {
         font-family: "Inter", sans-serif;
-        font-size: 48px;
-        font-weight: 900;
-        background: linear-gradient(120deg, #fcb045, #ff3f78);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-      }
-    }
-    & .text {
-      font-family: "Montserrat", sans-serif;
-      color: $colorText;
-      font-size: 18px;
-      font-weight: 400;
-    }
-  }
-  & .right {
-    color: $colorText;
-    text-align: end;
-    margin-top: 40px;
-    font-family: "Inter", sans-serif;
-    & .up {
-      grid-area: 1 / 1 / 2 / 3;
-      & p {
-        text-align: right;
-        font-family: "Inter", sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
         line-height: normal;
+        color: $colorText;
+        font-size: 48px;
+        font-weight: 400;
+        margin-top: 43px;
+        & .gardient {
+          font-family: "Inter", sans-serif;
+          font-size: 48px;
+          font-weight: 900;
+          background: linear-gradient(120deg, #fcb045, #ff3f78);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
       }
-      & span {
-        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        letter-spacing: 0.9px;
-        text-transform: uppercase;
-        font-weight: 700;
+      & .text {
+        font-family: "Montserrat", sans-serif;
+        color: $colorText;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    & .right {
+      color: $colorText;
+      text-align: end;
+      margin-top: 40px;
+      font-family: "Inter", sans-serif;
+      & .up {
+        grid-area: 1 / 1 / 2 / 3;
+        & p {
+          text-align: right;
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        & span {
+          background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          letter-spacing: 0.9px;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
       }
     }
     & ._main {
@@ -60,15 +66,25 @@ $colorText: #e4e5ea;
       align-items: center;
       justify-content: space-between;
       width: 10;
+      color: $colorText ;
       margin-top: 40px;
       margin-bottom: 61px;
       gap: 46px;
 
-      & .main__left, .main__right {
+      & .main__left,
+      .main__right {
         display: flex;
         flex-direction: column;
         gap: 30px;
       }
+    }
+    & ._main__down {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.65px;
+      text-transform: uppercase;
+      color: $colorText;
+      display: none;
     }
 
     & button {
@@ -89,7 +105,7 @@ $colorText: #e4e5ea;
   left: 0px;
   top: 0px;
 }
-.redball__small{
+.redball__small {
   position: absolute;
   top: 547px;
   z-index: -1;
@@ -111,6 +127,38 @@ $colorText: #e4e5ea;
 
 @media (max-width: 480px) {
   .main__container {
-    margin: 0px 0px;
+    background-image: url("Images/glass.png");
+    background-size: cover;
+    .main__content {
+      margin: 40px 14px;
+      flex-direction: column;
+      align-items: flex-start;
+      & .left {
+        & h1 {
+          font-size: 36px;
+        }
+      }
+      & .right {
+        & .up {
+          & .free__consult {
+            text-align: left;
+          }
+        }
+      }
+      & ._main {
+        display: none;
+      }
+      & ._main__down {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+    }
+    & .btn {
+      display: none;
+    }
+    & .desktop__ball {
+      display: none;
+    }
   }
 }

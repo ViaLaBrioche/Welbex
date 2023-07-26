@@ -20,6 +20,11 @@ $darkgrey: #656566;
     flex-direction: column;
     gap: 20px;
   }
+  & .column__main {
+    display: flex;
+    align-items: flex-end;
+    gap: 52px;
+  }
   & .column__right {
     display: flex;
     flex-direction: column;
@@ -45,10 +50,6 @@ $darkgrey: #656566;
     gap: 10px;
   }
 }
-.no__title {
-  margin-top: 63px;
-  align-self: start-end;
-}
 .column__rigth__down {
   display: flex;
   flex-direction: column;
@@ -64,6 +65,19 @@ $darkgrey: #656566;
   
 @media (max-width: 480px) {
   .footer__container {
-    margin: 0px 0px;
+    margin: 45px 16px;
+    flex-direction: column;
+    gap: 30px;
+    & .column__right {
+      text-align: left;
+    }
+    & .column__list {
+      & .contacts {
+        justify-content: flex-start;
+      }
+    }
+    & .column__rigth__down {
+      text-align: left;
+    }
   }
 }

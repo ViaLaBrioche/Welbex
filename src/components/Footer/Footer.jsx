@@ -15,21 +15,24 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer__column">
-        <p>Меню</p>
-        <div className="column__list">
-          <span>Расчёт стоимости</span>
-          <span>Услуги</span>
-          <span>Виджеты</span>
-          <span>Интеграции</span>
-          <span>Наши клиенты</span>
+        <div className="column__main">
+          <div className="column__list">
+          <p>Меню</p>
+            <span>Расчёт стоимости</span>
+            <span>Услуги</span>
+            <span>Виджеты</span>
+            <span>Интеграции</span>
+            <span>Наши клиенты</span>
+          </div>
+
+          <div className="footer__column no__title column__list">
+            <span>Кейсы</span>
+            <span>Благодарственные письма</span>
+            <span>Сертификаты</span>
+            <span>Блог на Youtube</span>
+            <span>Вопрос / Ответ</span>
+          </div>
         </div>
-      </div>
-      <div className="footer__column no__title column__list">
-        <span>Кейсы</span>
-        <span>Благодарственные письма</span>
-        <span>Сертификаты</span>
-        <span>Блог на Youtube</span>
-        <span>Вопрос / Ответ</span>
       </div>
       <div className="footer__column column__right">
         <div className="column__right__up">
